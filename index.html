@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8e1f7e">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=5">
+<title>Duta UNAIR – Duta Universitas Airlangga</title>
+<meta name="description" content="Website resmi Duta UNAIR: profil, duta yang menjabat, portofolio, dan kerja sama.">
+<meta property="og:title" content="Duta UNAIR"><meta property="og:description" content="Duta Universitas Airlangga: profil, portofolio, dan kerja sama.">
+</head>
+<body>
+<nav id="nav"></nav>
+
+<header class="hero dark" id="home">
+  <div class="wrap">
+    <small>UNIVERSITAS AIRLANGGA</small>
+    <h1 class="gold">Duta<span>UNAIR</span></h1>
+    <p>Mahasiswa pilihan yang mewakili wajah, nilai, dan prestasi Universitas Airlangga di dalam dan luar kampus.</p>
+    <div class="cta"><a class="btn fill" href="#duta">Duta UNAIR 2025</a><a class="btn line" href="#kontak">Ajak kerja sama</a></div>
+  </div>
+</header>
+
+<section id="tentang">
+  <div class="wrap split">
+    <div>
+      <h2>Tentang Duta UNAIR</h2>
+      <p class="lead">Duta UNAIR adalah mahasiswa terpilih dari berbagai fakultas yang bertugas menjadi representasi Universitas Airlangga. Kami hadir di acara kampus, kunjungan tamu, kegiatan promosi, dan kolaborasi dengan instansi serta komunitas.</p>
+      <div id="vm" style="margin-top:18px"></div>
+    </div>
+    <div class="facts" id="stats"></div>
+  </div>
+</section>
+
+<section class="soft" id="latar-section" style="padding-top:70px">
+  <div class="wrap"><h2>Latar belakang</h2><div class="timeline" id="latar"></div></div>
+</section>
+
+<section class="dark" id="duta">
+  <div class="wrap">
+    <h2>Duta yang menjabat</h2>
+    <p class="lead">Pilih fakultas untuk menyaring, lalu klik kartu untuk melihat profil.</p>
+    <div class="tabs" id="tabs" role="group" aria-label="Filter fakultas"></div>
+    <div class="grid" id="dutaGrid"></div>
+  </div>
+</section>
+
+<section id="portofolio">
+  <div class="wrap">
+    <h2>Portofolio duta</h2>
+    <div class="pf" id="pf"></div>
+    <h3 class="sub">Kegiatan terbaru</h3><div class="events" id="kegiatan"></div>
+  </div>
+</section>
+
+<section class="dark" id="galeri" style="padding-top:70px">
+  <div class="wrap"><h2>Duta UNAIR On Duty</h2><p class="lead">Dokumentasi penugasan Duta UNAIR</p><div class="gal" id="gal"></div></div>
+</section>
+
+<section class="soft" id="kontak">
+  <div class="wrap">
+    <h2>Kontak &amp; SOP kerja sama</h2>
+    <div class="split">
+      <div class="cinfo">
+        <p class="lead">Ingin mengundang Duta UNAIR ke acaramu? Ikuti alur berikut.</p>
+        <ol class="steps" id="sop"></ol>
+        <div id="kontakInfo"></div>
+        <h3 class="sub" style="margin-top:34px">Pertanyaan umum</h3><div id="faq"></div>
+      </div>
+      <form id="form">
+        <label>Nama pengundang<input required name="nama" autocomplete="name"></label>
+        <label>Instansi atau organisasi<input required name="instansi"></label>
+        <label>Jenis kerja sama<select name="jenis"><option>Penyambutan tamu</option><option>Pembawa acara</option><option>Promosi</option><option>Lainnya</option></select></label>
+        <label>Tanggal acara<input type="date" name="tgl"></label>
+        <label>Detail kebutuhan<textarea rows="4" name="detail"></textarea></label>
+        <button class="btn fill" type="submit">Kirim permohonan</button>
+        <p id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer id="foot"></footer>
+<script src="js/data.js?v=12"></script>
+<script src="js/main.js?v=12"></script>
+</body>
+</html>
